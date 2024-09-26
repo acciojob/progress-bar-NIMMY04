@@ -1,10 +1,10 @@
 //your JS code here. If required.
-const circles = document.querySelectorAll('.circles');
-const nextbutton = document.querySelectorById('next');
-const prevbutton = document.querySelectorById('prev');
+const circles = document.querySelectorAll('.circle');
+const nextbutton = document.getElementById('next');
+const prevbutton = document.getElementById('prev');
 let currentActive = 0;
 
-nextbutton.addEventListner('click',() =>{
+nextbutton.addEventListener('click',() =>{
     currentActive++;
     updateProgress();
 });
@@ -24,5 +24,5 @@ else{
 }
 });
 prevButton.disabled = currentActive === 0;
-nextbutton.disabled = curtentActive === circles.length -1;
+nextbutton.disabled = currentActive === circles.length -1;
 }
