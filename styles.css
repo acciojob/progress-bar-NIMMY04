@@ -22,11 +22,11 @@ body{
     justify-content: center;
     transition: background-color 0.3s;
 }
-.circle.active{
+.active{
     background-color: green;
     color: white;
 }
-.button{
+#button{
     display:flex;
     gap:10px;
 }
